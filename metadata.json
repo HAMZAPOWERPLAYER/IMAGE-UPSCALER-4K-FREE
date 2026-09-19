@@ -1,0 +1,6 @@
+{
+  "name": "Upscale",
+  "description": "100% client-side image upscaling tool with Lanczos3 resampling, unsharp mask sharpening, EXIF orientation correction, batch processing, and ZIP export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

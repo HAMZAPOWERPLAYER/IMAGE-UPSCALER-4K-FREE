@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+:root {
+  --bg-color: #12100D;
+  --surface-color: #1C1814;
+  --surface-hover: #24201B;
+  --border-color: #332B23;
+  --border-focus: #E8A33D;
+  --accent-color: #E8A33D;
+  --accent-hover: #F5B65B;
+  --text-primary: #F7F3EE;
+  --text-secondary: #A89F91;
+  --text-muted: #70685D;
+}
+
+.light-theme {
+  --bg-color: #F6F4EF;
+  --surface-color: #FFFFFF;
+  --surface-hover: #ECE8DF;
+  --border-color: #DCD4C7;
+  --border-focus: #C97A14;
+  --accent-color: #C97A14;
+  --accent-hover: #DF8919;
+  --text-primary: #1A1612;
+  --text-secondary: #5F5547;
+  --text-muted: #8E8373;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom range inputs */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: var(--border-color);
+  height: 6px;
+  border-radius: 9999px;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: var(--border-color);
+  height: 6px;
+  border-radius: 9999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background-color: var(--accent-color);
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid var(--surface-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.1s ease, background-color 0.15s ease;
+}
+
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--accent-color);
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid var(--surface-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
