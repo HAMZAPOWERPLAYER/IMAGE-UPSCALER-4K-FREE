@@ -306,8 +306,8 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/upscale.git
-cd upscale
+   git clone https://github.com/HAMZAPOWERPLAYER/IMAGE-UPSCALER-4K-FREE.git
+   cd IMAGE-UPSCALER-4K-FREE
 
 # Install dependencies
 npm install
