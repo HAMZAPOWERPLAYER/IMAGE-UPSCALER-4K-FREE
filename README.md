@@ -368,3 +368,11 @@ Typical processing times recorded on modern consumer hardware (Apple M-Series / 
 ## License
 
 MIT License. Designed and engineered for high-performance, private, client-side media workflows.
+
+---
+
+## ☕ Support This Project
+
+If you find this tool useful, consider supporting future development:
+
+- 💖 [Patreon](https://patreon.com/hamzapowerplayer)
